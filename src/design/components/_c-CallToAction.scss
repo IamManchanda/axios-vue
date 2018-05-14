@@ -1,0 +1,24 @@
+.c-CallToAction {
+  width: 300px;
+  margin: auto;
+  text-align: center;
+}
+
+.c-CallToAction_Link {
+  margin: 10px;
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid $primary-color;
+  border-radius: 3px;
+  width: 100px;
+  padding: 10px;
+  box-sizing: border-box;
+  color: $primary-color;
+  
+  &:hover, 
+  &:active,
+  &.router-link-active {
+    background-color: $primary-color;
+    color: $white;
+  }
+}

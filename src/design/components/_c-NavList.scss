@@ -1,0 +1,24 @@
+.c-NavList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+
+.c-NavList_Item {
+  margin: 0 16px;
+}
+
+.c-NavList_ItemLink {
+  text-decoration: none;
+  color: $white;
+  
+  &:hover,
+  &:active,
+  &.router-link-exact-active {
+    color: $secondary-color;
+  }
+}

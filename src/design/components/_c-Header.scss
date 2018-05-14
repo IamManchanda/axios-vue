@@ -1,0 +1,30 @@
+.c-Header {
+  height: 56px;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $primary-color;
+  padding: 0 20px;
+  margin-bottom: 2rem;
+}
+
+.c-Header_Logo {
+  font-weight: bold;
+  color: $white;
+}
+
+.c-Header_LogoLink {
+  text-decoration: none;
+  color: $white;
+
+  &:hover,
+  &:active,
+  &.router-link-exact-active {
+    color: $secondary-color;
+  }
+}
+
+.c-Header_Nav {
+  height: 100%;
+}

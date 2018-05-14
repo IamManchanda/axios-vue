@@ -1,0 +1,79 @@
+.c-AuthForm {
+  width: 500px;
+  margin: 30px auto;
+  border: 1px solid $light-gray;
+  padding: 20px;
+  box-shadow: 0 2px 3px $medium-gray;
+}
+
+.c-AuthForm-Input {
+  margin: 10px auto;
+
+  label {
+    display: block;
+    color: #4e4e4e;
+    margin-bottom: 6px;
+  }
+
+  input {
+    font: inherit;
+    width: 100%;
+    padding: 6px 12px;
+    box-sizing: border-box;
+    border: 1px solid $medium-gray;
+
+    &:focus {
+      outline: none;
+      border: 1px solid $primary-color;
+      background-color: $light-gray;
+    }
+  }
+
+  select {
+    border: 1px solid $medium-gray;
+    font: inherit;
+  }  
+}
+
+.c-AuthForm-Hobbies {
+  button {
+    border: 1px solid $primary-color;
+    background: $primary-color;
+    color: $white;
+    padding: 10px 20px;
+    font: inherit;
+    cursor: pointer;
+    &:hover, &:active {
+      background-color: lighten($primary-color, 10%);
+    }
+  }
+  input {
+    width: 90%;
+    display: inline-block;
+  }
+}
+
+.c-AuthForm-Submit {
+  button {
+    border: 1px solid $primary-color;
+    color: $primary-color;
+    padding: 10px 20px;
+    font: inherit;
+    cursor: pointer;
+
+    &:hover,
+    &:active {
+      background-color: $primary-color;
+      color: $white;
+    }
+
+    &[disabled],
+    &[disabled]:hover,
+    &[disabled]:active {
+      border: 1px solid $medium-gray;
+      background-color: transparent;
+      color: $medium-gray;
+      cursor: not-allowed;
+    }
+  }
+}

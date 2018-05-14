@@ -1,0 +1,11 @@
+/*
+ * Foundation
+ */
+
+// Settings
+@import 'abstracts/settings';
+
+// Load Foundation
+@import '~foundation-sites/scss/foundation';
+
+@include foundation-everything(true, true);
